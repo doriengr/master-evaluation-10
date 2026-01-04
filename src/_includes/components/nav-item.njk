@@ -1,0 +1,14 @@
+<li>
+    <a 
+        href="{{ url }}" 
+        class="link{% if page.url == url %} link--active{% endif %}"
+        {% if isExternal %} target="_blank" {% endif %}>
+        <span>{{ label }}</span>
+        {% set class = "link__icon "%}
+        {% if isExternal %}
+            {% include "icons/arrow.svg" %}
+        {% else %}
+            {% include "icons/arrow-long.svg" %}
+        {% endif %}
+    </a>
+</li>
