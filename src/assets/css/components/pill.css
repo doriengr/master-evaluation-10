@@ -11,4 +11,5 @@
     padding: calc(var(--spacing-small) * 0.25) var(--spacing-small);
     border-radius: 100rem;
     font-size: var(--text-sm);
+    color: #000000;
 }

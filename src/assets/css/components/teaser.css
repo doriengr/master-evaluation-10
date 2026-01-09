@@ -14,6 +14,7 @@
 .teaser__headline {
     line-height: 1.25;
     margin-bottom: var(--spacing-default);
+    color: var(--color-green-900);
 }
 
 .teaser__image-wrapper {
@@ -27,10 +28,6 @@
 
 .teaser__content {
     padding: var(--spacing-default);
-}
-
-.teaser__headline {
-    color: var(--color-green-500);
 }
 
 .teaser__button {
