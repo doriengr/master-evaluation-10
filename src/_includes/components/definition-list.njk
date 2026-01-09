@@ -1,13 +1,15 @@
 <dl class="definition-list">
     {% for item in items %}
-        <div class="definition-list__item">
-            <span class="definition-list__headline sr-only">{{ item.label }}</span>
-            <dd class="definition-list__definition">
-                {% if item.icon %}
-                    {% include item.icon %}
-                {% endif %}
-                    {{ item.value }}
-              </dd>
-        </div>
+        <dt>
+            {% if item.icon %}
+                <span class="sr-only">{{ item.label }}</span>
+                {% include item.icon %}
+            {% else %}
+                {{ item.label }}
+            {% endif %}
+        </dt>
+        <dd>
+            {{ item.value }}
+        </dd>
     {% endfor %}
 </dl>
